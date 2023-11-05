@@ -196,6 +196,16 @@ export class UserService {
       await AppDataSource.manager.transaction(
         async (transactionalEntityManager) => {
           foundUser.books.forEach(async (book) => {
+            if (book.numberOfCopies <= 0) {
+              throw new CustomError(
+                "Book is out of stock",
+                HttpStatus.INTERNAL_SERVER_ERROR,
+                {
+                  id: book.id,
+                }
+              );
+            }
+
             book.numberOfCopies -= 1;
             await transactionalEntityManager.save(book);
           });
