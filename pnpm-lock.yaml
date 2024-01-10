@@ -27,8 +27,8 @@ dependencies:
     specifier: ^8.11.3
     version: 8.11.3
   reflect-metadata:
-    specifier: ^0.1.13
-    version: 0.1.13
+    specifier: ^0.2.1
+    version: 0.2.1
   typedi:
     specifier: ^0.10.0
     version: 0.10.0
@@ -2887,6 +2887,10 @@ packages:
 
   /reflect-metadata@0.1.13:
     resolution: {integrity: sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==}
+    dev: false
+
+  /reflect-metadata@0.2.1:
+    resolution: {integrity: sha512-i5lLI6iw9AU3Uu4szRNPPEkomnkjRTaVt9hy/bn5g/oSzekBSMeLZblcjP74AW0vBabqERLLIrz+gR8QYR54Tw==}
     dev: false
 
   /regenerator-runtime@0.14.0:
