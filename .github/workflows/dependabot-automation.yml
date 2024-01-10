@@ -27,6 +27,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: merge-pr
     steps:
+      - name: Git checkout
+        uses: actions/checkout@v2
       - name: Check if release-candidate branch exists
         run: |
           git fetch origin
